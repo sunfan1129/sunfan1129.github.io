@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>廣州花都 3天2夜｜10/16–10/18</title>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yellow:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Huninn",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding-top:60px}
+nav{position:fixed;top:0;left:0;right:0;background:var(--bg);border-bottom:3px solid var(--ink);display:flex;justify-content:center;gap:6px;padding:10px;z-index:9;overflow-x:auto}
+nav a{color:var(--ink);text-decoration:none;padding:4px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-size:14px;white-space:nowrap}
+nav a:hover{background:var(--yellow)}
+main{max-width:640px;margin:0 auto;padding:16px}
+section{margin:28px 0}
+h2{font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--pink)}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:16px;margin-bottom:14px}
+.hero{text-align:center;background:var(--blue);border:3px solid var(--ink);border-radius:28px;padding:18px 14px 22px;overflow:hidden}
+.hero h1{font-size:28px;margin-top:6px}
+.hero p{font-size:15px}
+.count{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.count div{background:var(--bg);border:3px solid var(--ink);border-radius:16px;padding:6px 10px;min-width:62px}
+.count b{display:block;font-size:24px}
+.count span{font-size:12px}
+.flight{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.flight .ap{text-align:center}.flight .ap b{font-size:26px;display:block}
+.flight .line{flex:1;border-top:3px dashed var(--ink);position:relative}
+.flight .line::after{content:"✈";position:absolute;left:50%;top:-16px;transform:translateX(-50%);font-size:20px}
+.tag{display:inline-block;font-size:12px;padding:1px 9px;border:2px solid var(--ink);border-radius:999px;margin:2px 4px 2px 0}
+.t-car{background:var(--yellow)}.t-walk{background:var(--green)}.t-air{background:var(--blue)}.t-must{background:var(--pink);font-weight:bold}
+.days{display:flex;gap:8px;margin-bottom:14px}
+.days button{flex:1;font-family:inherit;font-size:15px;color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 4px;cursor:pointer}
+.days button.on{background:var(--yellow)}
+.day{display:none}.day.show{display:block;animation:pop .5s}
+@keyframes pop{0%{transform:scale(.92);opacity:0}60%{transform:scale(1.03);opacity:1}100%{transform:scale(1)}}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;border-left:3px solid var(--ink)}
+.ev{position:relative;margin-bottom:14px}
+.ev::before{content:"";position:absolute;left:-25px;top:6px;width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--green)}
+.ev.must::before{background:var(--pink)}
+.ev time{font-weight:bold;margin-right:6px}
+.ev small{display:block;opacity:.8}
+.note{background:var(--bg);border:2px dashed var(--ink);border-radius:14px;padding:8px 12px;font-size:14px;margin-top:6px}
+ul.todo{list-style:none}
+ul.todo li{margin:6px 0}
+ul.todo label{display:flex;gap:10px;align-items:center;cursor:pointer}
+ul.todo input{appearance:none;width:22px;height:22px;border:3px solid var(--ink);border-radius:7px;background:#fff;flex:none}
+ul.todo input:checked{background:var(--green)}
+ul.todo input:checked+span{text-decoration:line-through;opacity:.6}
+.food h3{font-size:17px}.food p{font-size:14px}
+footer{text-align:center;font-size:13px;padding:20px 0 40px}
+.float{animation:float 4s ease-in-out infinite}
+.spin{transform-origin:center;animation:sway 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes sway{50%{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#food">吃飯</a><a href="#stay">住宿</a><a href="#todo">清單</a>
+</nav>
+<main>
+<section id="home" class="hero">
+<svg viewBox="0 0 320 170" width="100%" aria-hidden="true">
+ <rect x="0" y="120" width="320" height="50" fill="#B9DAA5"/>
+ <circle cx="270" cy="38" r="20" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" class="float"/>
+ <g class="float"><ellipse cx="60" cy="40" rx="26" ry="12" fill="#fff" stroke="#3E3A39" stroke-width="3"/></g>
+ <!-- Canton Tower -->
+ <g class="spin">
+ <path d="M150 128 L156 60 L152 40 L160 10 L168 40 L164 60 L170 128 Z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+ <line x1="154" y1="80" x2="166" y2="80" stroke="#3E3A39" stroke-width="3"/>
+ <line x1="153" y1="100" x2="167" y2="100" stroke="#3E3A39" stroke-width="3"/>
+ </g>
+ <!-- buildings -->
+ <rect x="90" y="85" width="34" height="43" rx="6" fill="#fff" stroke="#3E3A39" stroke-width="3"/>
+ <rect x="196" y="75" width="40" height="53" rx="6" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/>
+ <!-- plane -->
+ <g class="float"><path d="M20 90 l40 -8 l14 -12 l6 2 l-8 12 l24 -4 l4 4 l-56 14 z" fill="#fff" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/></g>
+ <!-- little rose (小王子) -->
+ <g><line x1="262" y1="128" x2="262" y2="104" stroke="#3E3A39" stroke-width="3"/><circle cx="262" cy="100" r="8" fill="#F2A497" stroke="#3E3A39" stroke-width="3"/></g>
+</svg>
+<p>台北 → 廣州花都</p>
+<h1>再見面的3天2夜</h1>
+<p>2026.10.16（五）– 10.18（日）</p>
+<div class="count" id="count"><div><b id="d">-</b><span>天</span></div><div><b id="h">-</b><span>時</span></div><div><b id="m">-</b><span>分</span></div></div>
+</section>
+
+<section id="flight">
+<h2>航班</h2>
+<div class="card"><span class="tag t-air">去程 10/16（五）</span>
+<div class="flight"><div class="ap"><b>TPE</b>14:50 桃園</div><div class="line"></div><div class="ap"><b>CAN</b>約 16:40 白雲</div></div></div>
+<div class="card"><span class="tag t-air">回程 10/18（日）</span>
+<div class="flight"><div class="ap"><b>CAN</b>11:20 白雲</div><div class="line"></div><div class="ap"><b>TPE</b>桃園</div></div>
+<div class="note">09:20 前到機場就很充裕</div></div>
+</section>
+
+<section id="plan">
+<h2>每日行程</h2>
+<div class="days">
+<button class="on" data-d="1">10/16<br>落地</button>
+<button data-d="2">10/17<br>逛街</button>
+<button data-d="3">10/18<br>回家</button>
+</div>
+
+<div class="day show" id="day1"><div class="tl">
+<div class="ev"><time>14:50</time>桃園起飛<br><span class="tag t-air">飛機</span></div>
+<div class="ev"><time>16:40</time>落地白雲機場<small>入境＋領行李約 40 分</small></div>
+<div class="ev must"><time>17:30</time>出關跟她碰面<br><span class="tag t-must">必去</span><small>手機先不要在大廳拿出來</small></div>
+<div class="ev"><time>18:00</time>桔子水晶入住、放行李<br><span class="tag t-car">開車 15–20 分</span><small>她在大廳等一下就好</small></div>
+<div class="ev must"><time>18:30</time>晚餐（讓她選）<br><span class="tag t-must">必去</span><span class="tag t-walk">半島豪苑 步行</span><span class="tag t-car">潮發牛肉 開車 15 分</span></div>
+<div class="ev"><time>20:30</time>找地方坐一下，交手機＋小王子殼<small>想喝就一點點甜的</small></div>
+<div class="ev"><time>21:00</time>各自回去<div class="note">第一晚不要拖太晚，留點想念</div></div>
+</div></div>
+
+<div class="day" id="day2"><div class="tl">
+<div class="ev"><time>10:30</time>迎賓大道一帶碰面</div>
+<div class="ev"><time>11:00</time>來又來廣場逛逛、看飾品<br><span class="tag t-walk">步行</span></div>
+<div class="ev"><time>12:30</time>午餐</div>
+<div class="ev must"><time>14:00</time>咖啡或甜品，坐下聊天<br><span class="tag t-must">必去</span></div>
+<div class="ev"><time>15:30</time>融創茂室內慢慢走<br><span class="tag t-car">開車約 16 分</span><small>不進熱雪</small></div>
+<div class="ev"><time>17:30</time>晚餐後收尾</div>
+<div class="note">一次只走 2–3 站；她累就縮。她要上班的話，你自己去融創茂／熱雪，晚上看她下班有沒有空吃宵夜。</div>
+</div></div>
+
+<div class="day" id="day3"><div class="tl">
+<div class="ev"><time>07:45</time>早餐</div>
+<div class="ev"><time>08:40</time>退房</div>
+<div class="ev"><time>08:50</time>出發去機場<br><span class="tag t-car">開車 15–20 分</span></div>
+<div class="ev must"><time>11:20</time>白雲起飛回台北<br><span class="tag t-air">飛機</span><span class="tag t-must">必去</span></div>
+</div></div>
+</section>
+
+<section id="food">
+<h2>吃飯口袋名單</h2>
+<div class="card food"><h3>半島豪苑酒家 <span class="tag t-must">首選</span></h3><p>迎賓大道113號｜粵菜點心｜人均約 ¥80<br>蝦皇餃、脆皮燒鵝、鳳爪、焗蝦、榴蓮酥</p></div>
+<div class="card food"><h3>潮發潮汕牛肉店</h3><p>融創茂 3F 3071｜牛肉火鍋｜人均約 ¥93<br>吊龍、匙仁、雪花、鮮牛丸、頭水紫菜</p></div>
+<div class="card food"><h3>大觀中餐廳·燕鮑翅</h3><p>鳳凰北路75號｜酒店粵菜｜人均約 ¥106<br>環境安靜，適合聊天</p></div>
+<div class="card food"><h3>大榕樹下順德菜</h3><p>融創茂 3F 3007｜順德菜｜人均約 ¥72<br>魚皮、碌鵝、煲仔飯、雙皮奶</p></div>
+<div class="card food"><h3>雲海閣如意農莊</h3><p>炭火燒骨粥、燒豬骨｜適合手信或宵夜</p></div>
+</section>
+
+<section id="stay">
+<h2>住宿</h2>
+<div class="card"><h3>廣州白雲機場桔子水晶酒店</h3>
+<p>花都區迎賓大道163號<br>10/16（五）入住 → 10/18（日）退房，2 晚</p>
+<span class="tag t-car">機場開車 15–20 分</span><span class="tag t-walk">半島豪苑 同條路</span>
+<div class="note">跟她說「迎賓大道一帶」就好</div></div>
+</section>
+
+<section id="todo">
+<h2>出發清單</h2>
+<div class="card"><ul class="todo">
+<li><label><input type="checkbox"><span>台胞證</span></label></li>
+<li><label><input type="checkbox"><span>要給她的手機＋小王子手機殼</span></label></li>
+<li><label><input type="checkbox"><span>充電器、行動電源</span></label></li>
+<li><label><input type="checkbox"><span>兩天的衣服</span></label></li>
+<li><label><input type="checkbox"><span>常備藥、小腿貼布</span></label></li>
+<li><label><input type="checkbox"><span>支付寶／微信支付、一點人民幣</span></label></li>
+<li><label><input type="checkbox"><span>濕紙巾、小禮物（可選）</span></label></li>
+</ul></div>
+</section>
+<footer>慢慢來，留點空檔給聊天 🌹</footer>
+</main>
+<script>
+const T=new Date("2026-10-16T14:50:00+08:00");
+function tick(){let s=Math.max(0,(T-new Date())/1000);d.textContent=Math.floor(s/86400);h.textContent=Math.floor(s%86400/3600);m.textContent=Math.floor(s%3600/60)}
+tick();setInterval(tick,30000);
+document.querySelectorAll('.days button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.days button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ document.querySelectorAll('.day').forEach(x=>x.classList.remove('show'));document.getElementById('day'+b.dataset.d).classList.add('show');});
+document.querySelectorAll('.todo input').forEach((c,i)=>{c.checked=localStorage.getItem('gd'+i)==='1';c.onchange=()=>localStorage.setItem('gd'+i,c.checked?'1':'0')});
+</script>
+</body>
+</html>
