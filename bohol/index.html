@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>宿霧薄荷島｜10/23–10/27</title>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFCF6;--ink:#3E3A39;--pink:#F2A497;--yellow:#F6D27A;--blue:#A8D3E6;--green:#B9DAA5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Huninn",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding-top:60px}
+nav{position:fixed;top:0;left:0;right:0;background:var(--bg);border-bottom:3px solid var(--ink);display:flex;justify-content:center;gap:6px;padding:10px;z-index:9;overflow-x:auto}
+nav a{color:var(--ink);text-decoration:none;padding:4px 12px;border:3px solid var(--ink);border-radius:999px;background:#fff;font-size:14px;white-space:nowrap}
+nav a:hover{background:var(--yellow)}
+main{max-width:640px;margin:0 auto;padding:16px}
+section{margin:28px 0}
+h2{font-size:22px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--pink)}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:16px;margin-bottom:14px}
+.hero{text-align:center;background:var(--blue);border:3px solid var(--ink);border-radius:28px;padding:18px 14px 22px;overflow:hidden}
+.hero h1{font-size:28px;margin-top:6px}
+.hero p{font-size:15px}
+.count{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.count div{background:var(--bg);border:3px solid var(--ink);border-radius:16px;padding:6px 10px;min-width:62px}
+.count b{display:block;font-size:24px}
+.count span{font-size:12px}
+.flight{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.flight .ap{text-align:center}.flight .ap b{font-size:26px;display:block}
+.flight .line{flex:1;border-top:3px dashed var(--ink);position:relative}
+.flight .line::after{content:"✈";position:absolute;left:50%;top:-16px;transform:translateX(-50%);font-size:20px}
+.tag{display:inline-block;font-size:12px;padding:1px 9px;border:2px solid var(--ink);border-radius:999px;margin:2px 4px 2px 0}
+.t-car{background:var(--yellow)}.t-walk{background:var(--green)}.t-air{background:var(--blue)}.t-must{background:var(--pink);font-weight:bold}
+.days{display:flex;gap:8px;margin-bottom:14px}
+.days button{flex:1;font-family:inherit;font-size:15px;color:var(--ink);background:#fff;border:3px solid var(--ink);border-radius:18px;padding:8px 4px;cursor:pointer}
+.days button.on{background:var(--yellow)}
+.day{display:none}.day.show{display:block;animation:pop .5s}
+@keyframes pop{0%{transform:scale(.92);opacity:0}60%{transform:scale(1.03);opacity:1}100%{transform:scale(1)}}
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;border-left:3px solid var(--ink)}
+.ev{position:relative;margin-bottom:14px}
+.ev::before{content:"";position:absolute;left:-25px;top:6px;width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--green)}
+.ev.must::before{background:var(--pink)}
+.ev time{font-weight:bold;margin-right:6px}
+.ev small{display:block;opacity:.8}
+.note{background:var(--bg);border:2px dashed var(--ink);border-radius:14px;padding:8px 12px;font-size:14px;margin-top:6px}
+ul.todo{list-style:none}
+ul.todo li{margin:6px 0}
+ul.todo label{display:flex;gap:10px;align-items:center;cursor:pointer}
+ul.todo input{appearance:none;width:22px;height:22px;border:3px solid var(--ink);border-radius:7px;background:#fff;flex:none}
+ul.todo input:checked{background:var(--green)}
+ul.todo input:checked+span{text-decoration:line-through;opacity:.6}
+.food h3{font-size:17px}.food p{font-size:14px}
+footer{text-align:center;font-size:13px;padding:20px 0 40px}
+.float{animation:float 4s ease-in-out infinite}
+.spin{transform-origin:center;animation:sway 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes sway{50%{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.days button{font-size:13px;padding:6px 2px}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#food">吃飯</a><a href="#stay">住宿</a><a href="#todo">清單</a>
+</nav>
+<main>
+<section id="home" class="hero">
+<svg viewBox="0 0 320 170" width="100%" aria-hidden="true">
+ <rect x="0" y="110" width="320" height="60" fill="#A8D3E6"/>
+ <path d="M0 118 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3E3A39" stroke-width="3"/>
+ <circle cx="262" cy="40" r="20" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" class="float"/>
+ <g class="float"><ellipse cx="60" cy="36" rx="26" ry="11" fill="#fff" stroke="#3E3A39" stroke-width="3"/></g>
+ <!-- chocolate hills -->
+ <path d="M150 112 q22 -46 44 0 z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M185 112 q20 -38 40 0 z" fill="#F6D27A" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+ <!-- palm -->
+ <g class="spin"><line x1="100" y1="112" x2="108" y2="58" stroke="#3E3A39" stroke-width="4"/>
+ <path d="M108 58 q-22 -6 -32 8 M108 58 q-14 -18 -30 -14 M108 58 q16 -16 32 -10 M108 58 q22 0 28 16" fill="none" stroke="#3E3A39" stroke-width="3"/>
+ <path d="M108 58 q-22 -6 -32 8 q16 -2 32 -8 M108 58 q16 -16 32 -10 q-18 2 -32 10" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/></g>
+ <!-- whale shark -->
+ <g class="float"><path d="M40 140 q30 -18 70 -6 l14 -10 l-2 16 l2 14 l-14 -8 q-40 12 -70 -6 z" fill="#fff" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/>
+ <circle cx="56" cy="138" r="2.5" fill="#3E3A39"/><circle cx="72" cy="134" r="2" fill="#A8D3E6"/><circle cx="84" cy="140" r="2" fill="#A8D3E6"/><circle cx="96" cy="135" r="2" fill="#A8D3E6"/></g>
+ <!-- boat -->
+ <g class="float"><path d="M230 132 h56 l-10 14 h-38 z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><rect x="246" y="120" width="22" height="12" rx="3" fill="#fff" stroke="#3E3A39" stroke-width="3"/></g>
+</svg>
+<p>台北 → 宿霧・薄荷島（3 人）</p>
+<h1>宿霧薄荷島 5 日</h1>
+<p>2026.10.23（五）– 10.27（二）</p>
+<div class="count" id="count"><div><b id="d">-</b><span>天</span></div><div><b id="h">-</b><span>時</span></div><div><b id="m">-</b><span>分</span></div></div>
+</section>
+<section id="flight"><h2>航班（星宇）</h2>
+<div class="card"><span class="tag t-air">去程 10/23（五）JX783</span>
+<div class="flight"><div class="ap"><b>TPE</b>16:15 桃園 T2</div><div class="line"></div><div class="ap"><b>CEB</b>19:05 宿霧 T2</div></div></div>
+<div class="card"><span class="tag t-air">回程 10/27（二）JX784</span>
+<div class="flight"><div class="ap"><b>CEB</b>19:35 宿霧 T2</div><div class="line"></div><div class="ap"><b>TPE</b>22:25 桃園 T2</div></div></div>
+</section>
+<section id="plan"><h2>每日行程</h2>
+<div class="days">
+<button class="on" data-d="1">10/23<br>抵達</button><button data-d="2">10/24<br>鯨鯊</button><button data-d="3">10/25<br>渡輪</button><button data-d="4">10/26<br>潛水</button><button data-d="5">10/27<br>回程</button>
+</div>
+<div class="day show" id="day1"><div class="tl">
+<div class="ev"><time>16:15</time>JX783 桃園 T2 起飛<br><span class="tag t-air">飛機</span></div>
+<div class="ev"><time>19:05</time>落地宿霧 T2<small>過關拿行李 30–60 分</small></div>
+<div class="ev"><time>21:00</time>入住 Primeway Suites<br><span class="tag t-car">Grab</span><span class="tag t-car">45–90 分</span></div>
+<div class="ev"><time>晚上</time>附近吃飯、早睡<small>隔天凌晨出發</small></div>
+</div></div>
+<div class="day" id="day2"><div class="tl">
+<div class="ev"><time>02:00–04:00</time>Klook 私人團到飯店接<br> <span class="tag t-car">接送</span><small>行李留飯店</small></div>
+<div class="ev must"><time>早上</time>歐斯陸鯨鯊浮潛<br><span class="tag t-must">必去</span><small>現場外國人環境費 ₱1,000</small></div>
+<div class="ev must"><time>白天</time>巴迪恩溯溪<br><span class="tag t-must">必去</span><small>不加 Tumalog</small></div>
+<div class="ev"><time>19:00–20:00</time>送回飯店，可去按摩</div>
+</div></div>
+<div class="day" id="day3"><div class="tl">
+<div class="ev"><time>早上</time>退房 → 宿霧 Pier 1<br><span class="tag t-car">Grab</span><span class="tag t-car">10–20 分</span><small>提早 45–60 分到，終端費 ₱25 付現</small></div>
+<div class="ev"><time>08:20</time>OceanJet 渡輪（或 07:00）<br><span class="tag t-walk">渡輪</span><small>約 10:20 到塔比拉蘭</small></div>
+<div class="ev"><time>14:30</time>前到邦勞 Alona 放行李</div>
+<div class="ev must"><time>15:00–18:30</time>處女島日落浮潛<br><span class="tag t-must">必去</span><small>Klook 104301</small></div>
+<div class="ev"><time>晚上</time>住 Alona</div>
+</div></div>
+<div class="day" id="day4"><div class="tl">
+<div class="ev must"><time>早上</time>Napaling 體驗潛水<br><span class="tag t-must">必去</span><span class="tag t-car">三輪車／Grab 20–30 分</span></div>
+<div class="ev must"><time>下午</time>Corella 眼鏡猴 → 巧克力山<br><span class="tag t-car">包車</span><span class="tag t-must">必去</span><small>半天包車</small></div>
+<div class="ev"><time>晚上</time>住 Alona</div>
+</div></div>
+<div class="day" id="day5"><div class="tl">
+<div class="ev"><time>早上</time>邦勞 → 塔比拉蘭碼頭<br><span class="tag t-car">20–45 分</span></div>
+<div class="ev"><time>11:40</time>OceanJet 渡輪<br><span class="tag t-walk">渡輪</span><small>約 13:40 到宿霧 Pier 1</small></div>
+<div class="ev"><time>午餐</time>House of Lechon 烤乳豬<br><span class="tag t-car">Grab</span></div>
+<div class="ev"><time>16:00</time>出發去機場，進 T2<br><span class="tag t-car">Grab</span></div>
+<div class="ev must"><time>19:35</time>JX784 起飛<br><span class="tag t-air">飛機</span><small>22:25 到桃園 T2</small></div>
+</div></div>
+
+</section>
+<section id="food"><h2>吃飯口袋名單</h2>
+<div class="card food"><h3>House of Lechon</h3><p>宿霧烤乳豬｜10/27 回宿霧後午餐</p></div>
+</section>
+<section id="stay"><h2>住宿</h2>
+<div class="card"><h3>Primeway Suites <span class="tag t-walk">已訂</span></h3><p>宿霧市區 F. Ramos／Fuente Osmeña<br>10/23 – 10/25，2 晚</p></div>
+<div class="card"><h3>邦勞 Alona 海景房 <span class="tag t-must">還沒訂</span></h3><p>薄荷島邦勞 Alona Beach<br>10/25 – 10/27，2 晚</p></div>
+</section>
+<section id="todo"><h2>待辦清單</h2>
+<div class="card"><ul class="todo">
+<li><label><input type="checkbox"><span>訂 Alona 海景房</span></label></li>
+<li><label><input type="checkbox"><span>訂 10/25 OceanJet 宿霧 → 塔比拉蘭</span></label></li>
+<li><label><input type="checkbox"><span>訂 10/27 OceanJet 塔比拉蘭 → 宿霧</span></label></li>
+<li><label><input type="checkbox"><span>訂 10/26 下午半天包車</span></label></li>
+<li><label><input type="checkbox"><span>準備披索現金（環境費 ₱1,000、終端費 ₱25）</span></label></li>
+<li><label><input type="checkbox"><span>護照、泳衣、防曬、防水袋</span></label></li>
+</ul></div>
+</section>
+<footer>海很藍，慢慢玩 🐋</footer>
+</main>
+<script>
+const T=new Date("2026-10-23T16:15:00+08:00");
+function tick(){let s=Math.max(0,(T-new Date())/1000);d.textContent=Math.floor(s/86400);h.textContent=Math.floor(s%86400/3600);m.textContent=Math.floor(s%3600/60)}
+tick();setInterval(tick,30000);
+document.querySelectorAll('.days button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.days button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ document.querySelectorAll('.day').forEach(x=>x.classList.remove('show'));document.getElementById('day'+b.dataset.d).classList.add('show');});
+document.querySelectorAll('.todo input').forEach((c,i)=>{c.checked=localStorage.getItem('bh'+i)==='1';c.onchange=()=>localStorage.setItem('bh'+i,c.checked?'1':'0')});
+</script>
+</body>
+</html>
